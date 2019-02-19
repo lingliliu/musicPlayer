@@ -1,0 +1,288 @@
+body, p{
+    padding: 0;
+    margin: 0;
+    /* 不允许拖拽文字 */
+    user-select: none;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-image: url('../img/2.jpg');
+    
+}
+.wrapper {
+    position: relative;
+    width: 700px;
+    margin: 60px auto 0;
+}
+main {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+main img {
+    width: 200px;
+    height: 200px;
+    border: 45px solid #ccc;
+    border-radius: 50%;
+}
+.tool {
+    width: 100%;
+    background: rgba(131, 210, 230, 0.37);
+    height: 250px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.icon {
+    width: 3em;
+    height: 3em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.btns {
+    position: relative;
+    height: 65px;
+    margin: 50px 0;
+    padding: 25px;
+    
+}
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 40%;
+    margin: 0 auto;
+}
+.voice {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    margin-right: 30px;
+}
+.circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    /* background: #ccc; */
+    margin-left: 30px;
+}
+.circle svg  {
+    margin: auto auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.voice svg{
+    margin: auto auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.icon-pre {
+    margin: auto auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.icon-next {
+    margin: auto auto;
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    right: 0;
+}
+.icon-middle {
+    margin: auto auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer {
+    /* background: linear-gradient(to bottom, rgba(140, 241, 216, 0.514) ,rgba(75, 235, 208, 0.226)); */
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.view {
+    background: linear-gradient(to bottom, rgba(223, 169, 218, 0.514) , rgba(140, 241, 216, 0.514) ,rgba(6, 245, 205, 0.226));
+    /* width: 60%; */
+    width: 700px;
+    height: 100%;
+    position: absolute;
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: relative;
+}
+p {
+    font-size: 2em;
+    display: inline-block;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+/* .icon-menu {
+    position: absolute;
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+    right: 48px;
+} */
+/* 下面设置进度条样式 */
+.progress {
+    /* background: #fff; */
+    height: 70px;
+    position: relative;
+    margin-top: -30px;
+}
+.progress div {
+    display: inline-block;
+}
+.current-time {
+    width:10%;
+    /* background: #ccc; */
+    height: 70px;
+    position: absolute;
+    left: 80px;
+    line-height: 70px;
+    text-align: center;
+}
+.all-time {
+    width: 10%;
+    /* background: #ccc; */
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    right: 80px;
+    text-align: center;
+}
+.pro-box {
+    height: 10px;
+    /* background: #ccc; */
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -5px;
+    /* transform: translateX(-50%) translateX(-50%); */
+}
+.pro-bg {
+    height: 10px;
+    background: #ccc;
+    width: 400px;
+    position: absolute;
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.pro-active {
+    height: 10px;
+    background: rgba(251, 255, 0, 0.692);
+    width: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.radio-box {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    right: -5px;
+    /* background: rgba(0, 0, 0,0.3); */
+    cursor: pointer;
+}
+.radio {
+    display: inline-block;
+    /* 不然设置不上宽高 */
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-radius: 50%;
+    background:rgb(255, 0, 149);
+}
+
+/* 喇叭的进度条 */
+
+.pro-voice {
+    display: none;
+    position: absolute;
+    right: 50px;
+    bottom: 220px;
+    /* width: 30px; */
+    width: 50px;
+    height: 121px;
+    /* background: #ccc; */
+    text-align: center;
+    color:rgba(0,0,0,0.3);
+    
+    
+}
+.voice-bg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    width: 6px;
+    background: rgba(2, 2, 2, 0.5);
+    height: 100px;
+}
+.voice-active {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    width: 6px;
+    height: 6px;
+    background: rgba(245, 132, 3, 0.959);
+}
+.voice-box {
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 8px;
+    /* background:rgba(0,0,0,0.3); */
+    cursor: pointer;
+}
+.voice-radio {
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    background: rgba(26, 119, 240, 0.671);
+}

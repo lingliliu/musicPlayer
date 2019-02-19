@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>音乐播放器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
+   
+
+</head>
+<body>
+        <div class="footer">
+                <div class="view">
+                        <p id="song">Relax (Take It Easy)</p> 
+                    <!-- <svg class="icon icon-menu" aria-hidden="true">
+                            <use xlink:href="#icon-caidan"></use>
+                    </svg> -->
+                </div>
+            </div>
+    <div class="wrapper">
+        <main>
+            <img id="img" src="./img/7.jpg" alt="">
+            <audio id="audio" src="./music/1.mp3"></audio>
+        </main>
+        <div class="tool">
+            <div class="btns">
+                    <div class="circle">
+                    <svg id="change" class="icon" aria-hidden="true">
+                        <use id="chicon" xlink:href="#icon-xunhuan"></use>
+                    </svg>
+                </div>
+                <div class="center">
+                    <svg id='pre'class="icon icon-pre" aria-hidden="true">
+                        <use  xlink:href="#icon-shangyishou-yuanshijituantubiao
+                        "></use>
+                    </svg>
+                    <svg class="icon icon-middle" aria-hidden="true">
+                        <use id="middle" xlink:href="#icon-bofang"></use>
+                    </svg>
+                    <svg id='next' class="icon icon-next" aria-hidden="true">
+                        <use  xlink:href="#icon-xiayishou-yuanshijituantubiao
+                                "></use>
+                    </svg>
+                </div> 
+                <div class="voice">
+        
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-laba"></use>
+                    </svg>
+                </div>
+
+               
+
+            </div>
+            <div class="pro-voice">
+                    <div class="voice-num">
+                        10
+                    </div>
+                    <div class="voice-bg">
+
+                    </div>
+                    <div class="voice-active">
+                        <div class="voice-box">
+                            <span class="voice-radio"></span>
+                        </div>
+                    </div>
+            </div>
+            <div class="progress">
+                <div class="current-time">
+                    00:00
+                </div>
+                <div class="pro-box">
+                    <div class="pro-bg">
+
+                    </div>
+                    <div class="pro-active">
+                        <div class="radio-box">
+                            <span class="radio"></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="all-time">
+                    10:09
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./js/jquery-3.3.1.min.js"></script> -->
+    <script src="./js/iconfont.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
